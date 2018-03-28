@@ -1,3 +1,16 @@
 ID: hdi_synonym_sample
 _schema-version: '2.0'
 version: 0.0.1
+
+modules:
+ - name: hdi_db_module
+   type: hdb
+   path: hdi_db_module
+   requires:
+    - name: hdi-container
+
+resources:
+ - name: hdi-container
+   properties:
+      hdi-container-name: ${service-name}
+   type: com.sap.xs.hdi-container
