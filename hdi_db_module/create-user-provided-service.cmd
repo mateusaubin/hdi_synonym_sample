@@ -23,3 +23,8 @@ paste the same JSON content as Credentials
 		"hana"
 	] 
 }
+
+
+After creating the service you can try connecting to it in the WebIDE database explorer.
+It will show up as "Database Type": HDI Container.
+You should be able to read the target table's content, otherwise you might have a configuration problem.
