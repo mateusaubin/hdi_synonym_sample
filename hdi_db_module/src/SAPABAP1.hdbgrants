@@ -1,0 +1,14 @@
+{
+	"hdi_synonym_sample_SERVICE": {
+		"object_owner": { 
+			"roles": [
+				"hdi_synonym_sample::container_grantor"
+			]
+		},
+		"application_user": {
+			"roles": [
+				"hdi_synonym_sample::container_access"
+			]
+		}
+	}
+}
