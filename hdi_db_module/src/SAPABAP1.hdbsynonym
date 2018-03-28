@@ -1,0 +1,8 @@
+{
+  "hdi_synonym_sample.hdi_db_module::SFLIGHT": {
+    "target": {
+      "object": "SFLIGHT",
+      "schema": "SAPABAP1"
+    }
+  }
+}
