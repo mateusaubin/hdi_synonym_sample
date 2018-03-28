@@ -7,10 +7,19 @@ modules:
    type: hdb
    path: hdi_db_module
    requires:
-    - name: hdi-container
+     - name: hdi-container
+       properties:
+         TARGET_CONTAINER: ~{hdi-container-name}
+    
+     # declares the service as a required resource for this module
+     - name: hdi_synonym_sample_SERVICE
 
 resources:
  - name: hdi-container
+   type: com.sap.xs.hdi-container
    properties:
       hdi-container-name: ${service-name}
-   type: com.sap.xs.hdi-container
+
+# declares the service as a resource
+ - name: hdi_synonym_sample_SERVICE
+   type: org.cloudfoundry.existing-service
